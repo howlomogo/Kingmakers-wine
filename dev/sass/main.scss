@@ -1,0 +1,103 @@
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+// SETTINGS
+@import "settings/settings.config";
+@import "./bower_components/inuitcss/settings/settings.core";
+@import "settings/settings.colors";
+@import "settings/settings.global";
+
+
+
+
+
+// TOOLS
+@import "./bower_components/inuitcss/tools/tools.rem";
+@import "./bower_components/inuitcss/tools/tools.font-size";
+@import "./bower_components/inuitcss/tools/tools.clearfix";
+@import "./bower_components/inuitcss/tools/tools.hidden";
+
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  769px,
+    desktop: 980px,
+    wide:    1300px
+);
+@import "./bower_components/sass-mq/mq";
+
+
+
+
+
+// GENERIC
+@import "./bower_components/inuitcss/generic/generic.box-sizing";
+@import "./bower_components/inuitcss/generic/generic.normalize";
+@import "./bower_components/inuitcss/generic/generic.reset";
+@import "./bower_components/inuitcss/generic/generic.shared";
+
+
+
+
+
+// ELEMENTS
+@import "./bower_components/inuitcss/elements/elements.page";
+@import "./bower_components/inuitcss/elements/elements.headings";
+@import "./bower_components/inuitcss/elements/elements.images";
+@import "./bower_components/inuitcss/elements/elements.tables";
+
+
+
+
+// OBJECTS
+$inuit-wrapper-width: 1000px !default;
+@import "objects/objects.wrapper";
+@import "./bower_components/inuitcss/objects/objects.layout";
+@import "./bower_components/inuitcss/objects/objects.media";
+@import "./bower_components/inuitcss/objects/objects.flag";
+@import "./bower_components/inuitcss/objects/objects.list-bare";
+@import "./bower_components/inuitcss/objects/objects.list-inline";
+@import "./bower_components/inuitcss/objects/objects.box";
+@import "./bower_components/inuitcss/objects/objects.block";
+@import "./bower_components/inuitcss/objects/objects.ratio";
+@import "./bower_components/inuitcss/objects/objects.crop";
+@import "./bower_components/inuitcss/objects/objects.tables";
+@import "./bower_components/inuitcss/objects/objects.pack";
+
+
+
+
+
+// COMPONENTS
+//
+// Build and include your project’s UI Compoments here.
+@import "components/components.buttons";
+@import "components/components.navigation";
+@import "components/components.hero-video.scss";
+
+
+
+// UTILITIES
+@import "./bower_components/inuitcss/utilities/utilities.clearfix";
+
+$inuit-offsets: true;
+@import "./bower_components/inuitcss/utilities/utilities.widths";
+@import "./bower_components/inuitcss/utilities/utilities.headings";
+@import "./bower_components/inuitcss/utilities/utilities.spacing";
+@import "./bower_components/inuitcss/utilities/utilities.print";
+@import "./bower_components/inuitcss/utilities/utilities.hide";
+@import "utilities/utilities.utilities";
+
+
+// HAMBURGER
+$hamburger-layer-spacing: 6px !default;
+$hamburger-padding-x: 0px !default;
+$hamburger-padding-y: 0px !default;
+$hamburger-layer-width: 34px !default;
+$hamburger-layer-height: 3px !default;
+$hamburger-layer-color: #000000 !default;
+@import "./bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
+
+// SHAME - clean this up
+
+@import "shame";

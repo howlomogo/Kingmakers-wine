@@ -1,0 +1,25 @@
+{
+  "name": "arko",
+  "version": "1.0.0",
+  "description": "Arko Test Website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howlomogo/Arko.git"
+  },
+  "author": "Matt Pilcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howlomogo/Arko/issues"
+  },
+  "homepage": "https://github.com/howlomogo/Arko#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "main-bower-files": "^2.13.1"
+  }
+}

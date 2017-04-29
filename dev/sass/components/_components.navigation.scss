@@ -1,0 +1,58 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #000000;
+    opacity: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+
+    &.is-active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    a {
+        padding: 20px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #BDBDBD;
+        font-family: 'Montserrat', sans-serif;
+        transition: 0.3s;
+        display: inline-block;
+
+        @include mq($until: tablet) {
+            font-size: 20px;
+            display: block;
+        }
+
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+}
+
+.overlay-content {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nav--burger {
+    color: #ffffff;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 999;
+    cursor: pointer;
+    outline: none;
+    @include mq($until: tablet) {
+        top: 24px;
+        right: 24px;
+    }
+}

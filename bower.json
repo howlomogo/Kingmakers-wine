@@ -1,0 +1,30 @@
+{
+  "name": "dist",
+  "homepage": "https://github.com/howlomogo/Arko",
+  "authors": [
+    "Matt Pilcher <mattpilcher87@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuitcss": "^6.0.0-beta.4",
+    "css-hamburgers": "^0.8.1",
+    "jquery": "^3.2.1"
+  },
+  "overrides": {
+    "inuitcss": {
+      "ignore": true
+    },
+    "css-hamburgers": {
+      "ignore": true
+    }
+  }
+}

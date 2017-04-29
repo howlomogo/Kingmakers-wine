@@ -1,0 +1,72 @@
+html
+	head
+		include /_includes/_header
+	body
+		include /_includes/_navigation
+
+		.video-container
+			video.fillWidth(autoplay loop)
+				source(src='/assets/On-the-vine.mp4', type='video/mp4')
+				| Your browser does not support the video tag. I suggest you upgrade your browser.
+				source(src='/assets/On-the-vine.webm', type='video/webm')
+				| Your browser does not support the video tag. I suggest you upgrade your browser.
+			//- .poster.hidden(style="display:none;")
+			//- 	img(src='/assets/On-the-vine.jpg', alt='')
+
+			.banner-content
+				.o-wrapper--size-small
+					img.banner-logo(src="/assets/banner-logo.svg")
+					hr.banner-line
+					h2.banner-sub-title The flavours of nature fit for royalty
+
+		.o-wrapper
+			.section-header
+				h1.section-header--title About
+				hr.section-header--line
+				.section-header--star-container
+					.ion.ion-star
+					.ion.ion-star
+					.ion.ion-star
+					.ion.ion-star
+					.ion.ion-star
+
+				p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu. Eius causae aliquam ea nam, te autem virtute vix. Ad labitur forensibus ius, lorem tibique sit at.
+
+		.o-wrapper.o-wrapper--size-huge(style="overflow: hidden;")
+			section.timeline
+				.timeline-wine--container
+					img(src="/assets/wine-timeline.svg")
+				ul
+					li
+						div
+							time 1934
+							|  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					li
+						div
+							time 1937
+							|  Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+					li
+						div
+							time 1940
+							|  Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+					li
+						div
+							time 1943
+							|  In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					
+
+		.o-wrapper
+			.section-header
+				h1.section-header--title Wines
+				hr.section-header--line
+				.section-header--star-container
+					.ion.ion-star
+					.ion.ion-star
+					.ion.ion-star
+					.ion.ion-star
+					.ion.ion-star
+
+				p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu. Eius causae aliquam ea nam, te autem virtute vix. Ad labitur forensibus ius, lorem tibique sit at.
+
+
+		include /_includes/_footer

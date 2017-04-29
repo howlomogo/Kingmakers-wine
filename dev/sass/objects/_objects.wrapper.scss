@@ -1,0 +1,21 @@
+@import "../../bower_components/inuitcss/objects/objects.wrapper";
+
+.o-wrapper--size-tiny {
+	max-width: 600px;
+}
+
+.o-wrapper--size-small {
+	max-width: 800px;
+}
+
+.o-wrapper--size-default {
+	max-width: 1000px;
+}
+
+.o-wrapper--size-large {
+	max-width: 1200px;
+}
+
+.o-wrapper--size-huge {
+	max-width: 1400px;
+}

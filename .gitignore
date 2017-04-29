@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/bower_components/
+
+.DS_Store
+*/.DS_Store
+.DS_Store
+.DS_Store?
