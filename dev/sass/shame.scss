@@ -12,6 +12,11 @@ h1,h2,h3,h4,h5,h6,p,.ion,span {
 	color: $font-color;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ffffff;
+}
+
 //- Banner css needs to be looked at.
 .banner-content {
 	position: absolute;
@@ -27,8 +32,6 @@ h1,h2,h3,h4,h5,h6,p,.ion,span {
 }
 
 .banner-line {
-	border: none;
-	border-top: 1px solid #ffffff;
 	width: 80%;
 	margin: 0 auto $global-spacing--tiny/2 auto;
 }
@@ -49,8 +52,6 @@ h1,h2,h3,h4,h5,h6,p,.ion,span {
 	}
 
 	&--line {
-		border: none;
-		border-top: 1px solid $font-color;
 		width: 70px;
 		margin: 0 auto $global-spacing--tiny/2 auto;
 	}
@@ -84,6 +85,72 @@ h1,h2,h3,h4,h5,h6,p,.ion,span {
 	&--huge {
 		padding: $global-spacing--huge;
 	}
+}
+
+.wine-image--container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 38%;
+  display: flex;
+
+  &.isflipped {
+    right: auto;
+    left: 0;
+  }
+  
+  img {
+    height: 100%;
+    display: inline-block;
+    margin-right: -1px;
+    vertical-align: baseline;
+
+    &.isflipped {
+      margin-right: 0px;
+      margin-left: -1px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.wine-image--container-box {
+  width: 100%;
+  background-color: #ffffff;
+  height: 100%;
+  display: inline-block;
+}
+
+.wine-section {
+  padding: $global-spacing--huge * 2;
+  background-size: cover;
+  position: relative;
+
+  p, h2, h4 {
+    color: #ffffff;
+  }
+
+  p {
+    font-size:14px;
+  }
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  hr {
+    margin-bottom: $global-spacing--tiny;
+  }
+
+  h4 {
+    font-style: italic;
+  }
+
+  .wine-text {
+    padding: $global-spacing--normal;
+    background-color: rgba(0,0,0,0.3);
+  }
 }
 
 
