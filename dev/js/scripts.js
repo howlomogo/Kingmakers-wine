@@ -48,3 +48,13 @@ function toggleNavigation() {
   window.addEventListener("scroll", callbackFunc);
 
 })();
+
+
+
+//- Events
+function changeEvent(event) {
+    $(".events-showcase--container").removeClass("is-active");
+    $("#" + event).addClass("is-active");
+
+    console.log("bufewqfe");
+}
