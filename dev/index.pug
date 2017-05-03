@@ -69,71 +69,86 @@ html
 				p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu. Eius causae aliquam ea nam, te autem virtute vix. Ad labitur forensibus ius, lorem tibique sit at.
 
 
-		.big-wine-container
-			.first-wine(style="background-image: url('/assets/wine1-bg.jpg');")
-				.wine-text
-					h2 LEESE-FITCH
-					hr
-					h4 White Wine
+		.u-position--relative
+			.showcase--background-img.isflipped(style="background-image: url('/assets/wine1-bg.jpg');")
+			.showcase--background-filler.isflipped
 
-					p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu.
+			.o-wrapper.u-position--relative
+				.o-layout.o-layout--middle
 
-					p Vix an minim recusabo gubergren. An aeque dicam senserit pro, cu ius offendit eleifend prodesset, id impetus debitis hendrerit usu.
+					.o-layout__item(class="u-2/3")
+						.wine-preview--text.isflipped
+							h2 LEESE-FITCH
+							hr
+							h4 White Wine
 
+							p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu.
 
-			.second-wine
-				svg(class="wine-triangle" width="194px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-					g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-						g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
-							polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
-				.stupid-container
-					img.stupid-wine-img(src="/assets/white-wine.png")
-
-
-		.big-wine-container
-
-			.second-wine
-				svg(class="wine-triangle isflipped" width="194px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-					g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-						g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
-							polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
-				.stupid-container
-					img.stupid-wine-img.isflipped(src="/assets/red-wine.png")
-
-			.first-wine.isflipped(style="background-image: url('/assets/wine2-bg.jpg');")
-				.wine-text.isflipped
-					h2 LEESE-FITCH
-					hr
-					h4 White Wine
-
-					p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu.
-
-					p Vix an minim recusabo gubergren. An aeque dicam senserit pro, cu ius offendit eleifend prodesset, id impetus debitis hendrerit usu.
+							p Vix an minim recusabo gubergren. An aeque dicam senserit pro, cu ius offendit eleifend prodesset, id impetus debitis hendrerit usu.
 
 
 
-		.big-wine-container
-			.first-wine(style="background-image: url('/assets/wine1-bg.jpg');")
-				.wine-text
-					h2 LEESE-FITCH
-					hr
-					h4 White Wine
+					.o-layout__item.u-position--relative.u-background-color--white(class="u-1/3")
+						img.wine-preview--img(src="/assets/white-wine.png")
 
-					p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu.
-
-					p Vix an minim recusabo gubergren. An aeque dicam senserit pro, cu ius offendit eleifend prodesset, id impetus debitis hendrerit usu.
+						svg(class="wine-triangle" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+							g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+								g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
+									polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
 
 
-			.second-wine
-				svg(class="wine-triangle" width="194px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-					g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-						g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
-							polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
-					.stupid-container
-						img.stupid-wine-img(src="/assets/white-wine.png")
+		.u-position--relative
+			.showcase--background-filler
+			.showcase--background-img(style="background-image: url('/assets/wine2-bg.jpg');")
+
+			.o-wrapper.u-position--relative
+				.o-layout.o-layout--middle
+					.o-layout__item.u-position--relative.u-background-color--white(class="u-1/3")
+						img.wine-preview--img(src="/assets/red-wine.png")
+
+						svg(class="wine-triangle isflipped" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+							g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+								g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
+									polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
+
+					.o-layout__item(class="u-2/3")
+						.wine-preview--text
+							h2 LEESE-FITCH
+							hr
+							h4 White Wine
+
+							p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu.
+
+							p Vix an minim recusabo gubergren. An aeque dicam senserit pro, cu ius offendit eleifend prodesset, id impetus debitis hendrerit usu.
 
 
 
+		.u-position--relative
+			.showcase--background-img.isflipped(style="background-image: url('/assets/wine1-bg.jpg');")
+			.showcase--background-filler.isflipped
+
+			.o-wrapper.u-position--relative
+				.o-layout.o-layout--middle
+
+					.o-layout__item(class="u-2/3")
+						.wine-preview--text.isflipped
+							h2 LEESE-FITCH
+							hr
+							h4 White Wine
+
+							p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu.
+
+							p Vix an minim recusabo gubergren. An aeque dicam senserit pro, cu ius offendit eleifend prodesset, id impetus debitis hendrerit usu.
+
+
+
+					.o-layout__item.u-position--relative.u-background-color--white(class="u-1/3")
+						img.wine-preview--img(src="/assets/white-wine.png")
+
+						svg(class="wine-triangle" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+							g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+								g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
+									polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
 
 		.o-wrapper
 			.section-header
@@ -176,63 +191,30 @@ html
 							button.events-box--info(onclick="changeEvent('event3')")
 								p More Info
 
-		#event1.events-showcase--container.is-active
-			.second-showcase
-				svg(class="wine-triangle isshowcase" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-					g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-						g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
-							polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
-				.showcase-text--container
-					h3 Autumn Night At The Vineyard
-					hr
-					.ion.ion-calendar
-					span 14/07/2018
 
-					p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu. Eius causae aliquam ea nam, te autem virtute vix. Ad labitur forensibus ius, lorem tibique sit at.
-
-					button.generic-btn
-						| BOOK NOW
-
+		#event1.u-position--relative
+			.showcase--background-filler
 			.showcase--background-img(style="background-image: url('/assets/showcase-test.jpg');")
 
-		#event2.events-showcase--container
-			.second-showcase
-				svg(class="wine-triangle isshowcase" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-					g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-						g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
-							polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
-				.showcase-text--container
-					h3 Autumn Night At The Vineyard
-					hr
-					.ion.ion-calendar
-					span 14/07/2018
+			.o-wrapper.u-position--relative
+				.o-layout
+					.o-layout__item.u-position--relative.u-background-color--white(class="u-1/3")
+						svg(class="wine-triangle isshowcase" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+							g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+								g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
+									polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
 
-					p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu. Eius causae aliquam ea nam, te autem virtute vix. Ad labitur forensibus ius, lorem tibique sit at.
+						.showcase-text--container
+							h3 Autumn Night At The Vineyard
+							hr
+							.ion.ion-calendar
+							span 14/07/2018
 
-					button.generic-btn
-						| BOOK NOW
+							p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu. Eius causae aliquam ea nam, te autem virtute vix. Ad labitur forensibus ius, lorem tibique sit at.
 
-			.showcase--background-img(style="background-image: url('/assets/wine2-bg.jpg');")
+							button.generic-btn
+								| BOOK NOW
 
-
-		#event3.events-showcase--container
-			.second-showcase
-				svg(class="wine-triangle isshowcase" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-					g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-						g(id="Artboard" transform="translate(-62.000000, -34.000000)" fill="#FFFFFF")
-							polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
-				.showcase-text--container
-					h3 Autumn Night At The Vineyard
-					hr
-					.ion.ion-calendar
-					span 14/07/2018
-
-					p Lorem ipsum dolor sit amet, prima adipisci ad pro. Detracto appareat mel id, vix ei noluisse lucilius neglegentur. Lorem utroque qui eu. Eius causae aliquam ea nam, te autem virtute vix. Ad labitur forensibus ius, lorem tibique sit at.
-
-					button.generic-btn
-						| BOOK NOW
-
-			.showcase--background-img(style="background-image: url('/assets/wine1-bg.jpg');")
-
+					.o-layout__item(class="u-2/3")
 
 		include /_includes/_footer

@@ -7,9 +7,260 @@ $global-spacing--huge: 64px !default;
 $font-color: #757575 !default;
 $color-grey-lightest: #F5F5F5 !default;
 
+
+// Spacing
+.u-padding {
+		&--tiny {
+				padding: $global-spacing--tiny;
+		}
+
+		&--small {
+				padding: $global-spacing--small;
+		}
+
+		&--normal {
+				padding: $global-spacing--normal;
+		}
+
+		&--large {
+				padding: $global-spacing--large;
+		}
+
+		&--huge {
+				padding: $global-spacing--huge;
+		}
+}
+
 //- Global Font colors
 body {
 	color: $font-color;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #ffffff;
+}
+
+
+// Wine Preview Sections
+
+.wine-preview--img {
+		width:190px;
+		display: block;
+		margin: $global-spacing--huge auto;
+		&.isflipped {
+			-webkit-transform: translate(0, -50%);
+			transform: translate(0, -50%);
+		}
+}
+
+.wine-preview--text {
+	padding: $global-spacing--normal;
+	background-color: rgba(0,0,0,0.3);
+	margin-left: 120px;
+
+	h2,p,h4 {
+	color: #fff;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+
+	&.isflipped {
+		margin-right: 144px;
+		margin-left: auto;
+	}
+}
+
+
+//- Events Section
+.event-box--container {
+	width: 100%;
+	height:260px;
+	background-color: red;
+	position: relative;
+	background-size: cover;
+}
+
+.events-box--bottom {
+	position: absolute;
+	left:0;
+	right:0;
+	bottom: 0;
+	background-color: $color-grey-lightest;
+	padding: $global-spacing--normal $global-spacing--tiny $global-spacing--tiny;
+	text-align: center;
+
+	span {
+		margin-bottom: 0px;
+	}
+
+	.ion {
+		padding-right: $global-spacing--tiny / 2;
+	}
+}
+
+.events-box--info {
+	position: absolute;
+	background-color: #ffffff;
+	padding: $global-spacing--tiny /2 $global-spacing--small;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	outline: none;
+
+	p {
+		margin-bottom: 0px;
+	}
+}
+//- Events Section
+
+
+//- Showcase Section
+.showcase-text--container {
+	padding: $global-spacing--huge 0px;
+	width:100%;
+	p {
+		font-size:14px;
+	}
+
+	h3 {
+		margin-bottom: $global-spacing--tiny;
+	}
+
+	hr {
+		margin-bottom: $global-spacing--tiny;
+		border-top: 1px solid $font-color;
+	}
+
+	.ion {
+		padding-right: $global-spacing--tiny / 2;
+		margin-bottom: $global-spacing--tiny;
+	}
+}
+
+.showcase--background-img {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	z-index: 0;
+	right: 0;
+	left:30%;
+	background-size: cover;
+	background-position: center;
+
+	&.isflipped {
+		left: 0;
+		right: 30%;
+	}
+}
+
+.showcase--background-filler {
+	width: 20%;
+	background-color:#ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+
+	&.isflipped {
+		left: auto;
+		right: 0;
+	}
+}
+//- Showcase Section
+
+
+
+.wine-triangle {
+	position: absolute;
+	top:0;
+	bottom:0;
+	height:100%;
+	transform: translate(-100%, 0%);
+	left:1px;
+
+		&.isflipped {
+			left: auto;
+			right: 0;
+			-webkit-transform: scaleX(-1) translate(-100%, 0%);
+			transform: scaleX(-1) translate(-100%, 0%);
+			left:auto;
+			right: 1px;
+		}
+
+		&.isshowcase {
+			left: auto;
+			right: 0;
+			-webkit-transform: scaleX(-1) translate(-100%, 0%);
+			transform: scaleX(-1) scaleY(-1) translate(-100%, 0%);
+			left:auto;
+			right: 1px;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- Banner css needs to be looked at.
+.banner-content {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		img {
+				margin-bottom: $global-spacing--tiny;
+				max-width: 400px;
+		}
+}
+
+
+
+.banner-line {
+		width: 80%;
+		margin: 0 auto $global-spacing--tiny/2 auto;
+}
+
+.banner-sub-title {
+		font-size: 20px;
+		color: #ffffff;
+		font-style: italic;
+}
+
+
+.section-header {
+		padding: $global-spacing--huge;
+		text-align: center;
+
+		&--title {
+				margin-bottom: $global-spacing--tiny;
+		}
+
+		&--line {
+				width: 70px;
+				margin: 0 auto $global-spacing--tiny/2 auto;
+		border-top: 1px solid $font-color;
+		}
+
+		&--star-container {
+				margin-bottom: $global-spacing--tiny;
+				font-size: 22px;
+		}
 }
 
 .footer {
@@ -54,338 +305,6 @@ body {
 	padding: 12px 18px;
 	font-size: 14px;
 	color: $font-color;
-}
-
-
-.events-showcase--container {
-	overflow: hidden;
-	display: none;
-	table-layout: fixed;
-	width:100%;
-
-	&.is-active {
-		display: table;
-	}
-}
-
-.second-showcase {
-	width: 30%;
-	max-width: 30%;
-	background-color: #fff;
-	height: 100%;
-	display: table-cell;
-	position: relative;
-	margin: $global-spacing--huge;
-}
-
-.showcase-text--container {
-	padding: $global-spacing--huge;
-	padding-right: 0px;
-	height: 100%;
-	width:100%;
-	p {
-		font-size:14px;
-	}
-
-	h3 {
-		margin-bottom: $global-spacing--tiny;
-	}
-
-	hr {
-		margin-bottom: $global-spacing--tiny;
-		border-top: 1px solid $font-color;
-	}
-
-	.ion {
-		padding-right: $global-spacing--tiny / 2;
-		margin-bottom: $global-spacing--tiny;
-	}
-}
-
-.showcase--background-img {
-	width: 70%;
-	max-width: 70%;
-	background-size: cover;
-	height: 100%;
-	display: table-cell;
-	padding: $global-spacing--huge * 2;
-	padding-right:194px;
-	vertical-align: middle;
-}
-
-
-.event-box--container {
-	width: 100%;
-	height:260px;
-	background-color: red;
-	position: relative;
-	background-size: cover;
-}
-
-.events-box--bottom {
-	position: absolute;
-	left:0;
-	right:0;
-	bottom: 0;
-	background-color: $color-grey-lightest;
-	padding: $global-spacing--normal $global-spacing--tiny $global-spacing--tiny;
-	text-align: center;
-
-	span {
-		margin-bottom: 0px;
-	}
-
-	.ion {
-		padding-right: $global-spacing--tiny / 2;
-	}
-}
-
-.events-box--info {
-	position: absolute;
-	background-color: #ffffff;
-	padding: $global-spacing--tiny /2 $global-spacing--small;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: none;
-	outline: none;
-
-	p {
-		margin-bottom: 0px;
-	}
-}
-
-
-.wine-text {
-	padding: $global-spacing--normal;
-	background-color: rgba(0,0,0,0.3);
-	float: right;
-
-	h2,p,h4 {
-	color: #fff;
-	}
-
-	p {
-		font-size: 14px;
-	}
-
-	max-width: 500px;
-
-
-	&.isflipped {
-		float: left;
-	}
-}
-
-.wine-triangle {
-	position: absolute;
-	top:0;
-	bottom:0;
-	height:100%;
-	transform: translate(-100%, 0%);
-	left:1px;
-
-		&.isflipped {
-			left: auto;
-			right: 0;
-			-webkit-transform: scaleX(-1) translate(-100%, 0%);
-			transform: scaleX(-1) translate(-100%, 0%);
-			left:auto;
-			right: 1px;
-		}
-
-		&.isshowcase {
-			left: auto;
-			right: 0;
-			-webkit-transform: scaleX(-1) translate(-100%, 0%);
-			transform: scaleX(-1) scaleY(-1) translate(-100%, 0%);
-			left:auto;
-			right: 1px;
-		}
-}
-
-.big-wine-container {
-	overflow: hidden;
-	display: table;
-	table-layout: fixed;
-	width:100%;
-
-	p, h2, h4 {
-		color: #ffffff;
-	}
-
-	p {
-		font-size:14px;
-	}
-
-	h2 {
-		margin-bottom: 0px;
-	}
-
-	hr {
-		margin-bottom: $global-spacing--tiny;
-	}
-
-	h4 {
-		font-style: italic;
-	}
-}
-
-.first-wine {
-	width: 70%;
-	max-width: 70%;
-	background-size: cover;
-	height: 100%;
-	display: table-cell;
-	padding: $global-spacing--huge * 2;
-	padding-right:194px;
-	vertical-align: middle;
-
-	&.isflipped {
-		padding-right: 0px;
-		padding-left: 194px;
-	}
-}
-
-.second-wine {
-	width: 30%;
-	max-width: 30%;
-	background-color: #fff;
-	height: 100%;
-	display: table-cell;
-	position: relative;
-	margin: $global-spacing--huge;
-}
-
-.stupid-wine-img {
-		width:190px;
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transform: translate(0, -50%);
-
-		&.isflipped {
-			left: auto;
-			right: 0;
-			-webkit-transform: translate(0, -50%);
-			transform: translate(0, -50%);
-		}
-}
-
-.stupid-container {
-	height: 100%;
-	background-color: #ffffff;
-	width:100%;
-}
-
-hr {
-	border: none;
-	border-top: 1px solid #ffffff;
-}
-
-//- Banner css needs to be looked at.
-.banner-content {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-
-		img {
-				margin-bottom: $global-spacing--tiny;
-				max-width: 400px;
-		}
-}
-
-.banner-line {
-		width: 80%;
-		margin: 0 auto $global-spacing--tiny/2 auto;
-}
-
-.banner-sub-title {
-		font-size: 20px;
-		color: #ffffff;
-		font-style: italic;
-}
-
-
-.section-header {
-		padding: $global-spacing--huge;
-		text-align: center;
-
-		&--title {
-				margin-bottom: $global-spacing--tiny;
-		}
-
-		&--line {
-				width: 70px;
-				margin: 0 auto $global-spacing--tiny/2 auto;
-		border-top: 1px solid $font-color;
-		}
-
-		&--star-container {
-				margin-bottom: $global-spacing--tiny;
-				font-size: 22px;
-		}
-}
-
-
-// Spacing
-
-.u-padding {
-		&--tiny {
-				padding: $global-spacing--tiny;
-		}
-
-		&--small {
-				padding: $global-spacing--small;
-		}
-
-		&--normal {
-				padding: $global-spacing--normal;
-		}
-
-		&--large {
-				padding: $global-spacing--large;
-		}
-
-		&--huge {
-				padding: $global-spacing--huge;
-		}
-}
-
-.wine-image--container {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 38%;
-	display: flex;
-
-	&.isflipped {
-		right: auto;
-		left: 0;
-	}
-	
-	// img {
-	//   min-height: 100%;
-	//   display: inline-block;
-	//   margin-right: -1px;
-	//   vertical-align: baseline;
-
-	//   &.isflipped {
-	//     margin-right: 0px;
-	//     margin-left: -1px;
-	//     -webkit-transform: scaleX(-1);
-	//     transform: scaleX(-1);
-	//   }
-	// }
-}
-
-.wine-section {
-	padding: $global-spacing--huge * 2;
-	background-size: cover;
-	position: relative;
 }
 
 
