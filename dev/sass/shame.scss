@@ -45,19 +45,28 @@ hr {
 // Wine Preview Sections
 
 .wine-preview--img {
-		width:190px;
-		display: block;
-		margin: $global-spacing--huge auto;
-		&.isflipped {
-			-webkit-transform: translate(0, -50%);
-			transform: translate(0, -50%);
-		}
+	position: absolute;
+	max-width: 70%;
+	max-height: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(calc(-50% + 12px), -50%);
+	z-index:1;
+}
+
+.wine-preview--text-container {
+	padding: $global-spacing--huge 0px;
+	padding-left: 120px;
+	&.isflipped {
+		padding-right: 144px;
+		padding-left: 0px;
+	}
 }
 
 .wine-preview--text {
 	padding: $global-spacing--normal;
 	background-color: rgba(0,0,0,0.3);
-	margin-left: 120px;
+	margin-bottom: $global-spacing--normal;
 
 	h2,p,h4 {
 	color: #fff;
@@ -66,14 +75,17 @@ hr {
 	p {
 		font-size: 14px;
 	}
-
-
-	&.isflipped {
-		margin-right: 144px;
-		margin-left: auto;
-	}
 }
 
+.o-layout--stretch {
+  display: flex;
+  flex-wrap: wrap;
+
+  > .o-layout__item {
+    display: flex;
+  }
+
+}
 
 //- Events Section
 .event-box--container {
@@ -269,6 +281,23 @@ hr {
 	color: #ffffff;
 	padding: $global-spacing--huge;
 
+	&--line {
+		width: 1px;
+		background-color: #ffffff;
+		position: absolute;
+		height: 50%;
+		top: 50%;
+		transform: translate(0%, calc(-50% - 28px));
+
+		&-first {
+			left: 33.33333%;
+		}
+
+		&-second {
+			left: 66.66666%;
+		}
+	}
+
 	&--logo {
 		width: 50%;
 		margin-bottom: $global-spacing--tiny;
@@ -279,7 +308,7 @@ hr {
 	}
 
 	.ion {
-		font-size: 40px;
+		font-size: 32px;
 		padding: 0px $global-spacing--tiny;
 	}
 
@@ -288,23 +317,17 @@ hr {
 		margin: 0 auto;
 		margin-bottom: $global-spacing--tiny;
 	}
-
-	button {
-		display: block;
-		margin: 0 auto;
-		border: 4px solid #ffffff;
-		background-color: transparent;
-		padding: 12px $global-spacing--small;
-		color: #ffffff;
-	}
 }
 
 .generic-btn {
-	border: 2px solid $font-color;
-	background-color: #ffffff;
-	padding: 12px 18px;
-	font-size: 14px;
+	background-color: transparent;
+	padding: 12px $global-spacing--small;
+	border: 4px solid $font-color;
 	color: $font-color;
+	&.inverted {
+		border: 4px solid #ffffff;
+		color: #ffffff;
+	}
 }
 
 
