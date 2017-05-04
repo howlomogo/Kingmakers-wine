@@ -7,3 +7,10 @@
 // Standardise some UI treatments.
 $global-radius: 3px !default;
 $global-transition: (1/3) + s !default;
+
+
+$global-spacing--tiny: 16px !default;
+$global-spacing--small: 24px !default;
+$global-spacing--normal: 32px !default;
+$global-spacing--large: 48px !default;
+$global-spacing--huge: 64px !default;

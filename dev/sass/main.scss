@@ -19,7 +19,7 @@
 @import "./bower_components/inuitcss/tools/tools.hidden";
 
 $mq-breakpoints: (
-    mobile:  320px,
+    mobile:  480px,
     tablet:  769px,
     desktop: 980px,
     wide:    1300px
@@ -74,6 +74,7 @@ $inuit-wrapper-width: 1000px !default;
 @import "components/components.buttons";
 @import "components/components.navigation";
 @import "components/components.hero-video.scss";
+@import "components/components.timeline.scss";
 
 
 
