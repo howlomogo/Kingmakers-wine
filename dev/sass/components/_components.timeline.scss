@@ -2,12 +2,35 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline-wine--container {
-		width: 100%;
+	width: 100%;
 
-		img {
-				margin: 0 auto;
-				display: block;
+	img {
+			margin: 0 auto;
+			display: block;
+	}
+}
+
+
+.timeline {
+	h3 {
+		margin-bottom: $global-spacing--tiny/2 !important;
+	}
+
+	p {
+		font-size: 14px;
+
+		margin-bottom: $global-spacing--tiny;
+
+		&:last-child {
+			margin-bottom: 0px;
 		}
+	}
+
+	hr {
+		border-top: 1px solid $font-color;
+		margin-bottom: $global-spacing--tiny;
+		width: 70px;
+	}
 }
 
 .timeline ul {
@@ -73,13 +96,6 @@
 	right: -15px;
 	border-width: 16px 0 16px 16px;
 	border-color: transparent transparent transparent $color-grey-lightest;
-}
-
-time {
-	display: block;
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin-bottom: 8px;
 }
 
 

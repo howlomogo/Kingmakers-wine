@@ -1,5 +1,17 @@
 //- Move these to global settings
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'PT Serif', serif;
+	line-height: normal !important;
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
 
 // Spacing
 .u-padding {
@@ -56,7 +68,7 @@ hr {
 	}
 
     @include mq($until: tablet) {
-    	padding: $global-spacing--huge !important;
+    	padding: $global-spacing--huge $global-spacing--large !important;
     }
 
     @include mq($until: mobile) {
@@ -66,15 +78,28 @@ hr {
 
 .wine-preview--text {
 	padding: $global-spacing--normal;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.5);
 	margin-bottom: $global-spacing--normal;
+	color: #ffffff !important;
 
-	h2,p,h4 {
-	color: #fff;
+	h2 {
+		letter-spacing: 12px;
+		margin-bottom: $global-spacing--tiny /2;
+	}
+
+	h4 {
+		margin-bottom: $global-spacing--tiny;
+		font-weight: 400;
+		font-style: italic;
 	}
 
 	p {
 		font-size: 14px;
+		margin-bottom: $global-spacing--tiny;
+	}
+
+	hr {
+		margin-bottom: $global-spacing--tiny /2;
 	}
 }
 
@@ -357,23 +382,33 @@ hr {
 	}
 
 	&--logo {
-		width: 50%;
+		width: 100%;
+		max-width: 180px;
 		margin-bottom: $global-spacing--tiny;
 	}
 
 	p {
-		margin-bottom: $global-spacing--tiny / 2;
+		margin-bottom: 4px;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		line-height: 20px;
 	}
 
 	.ion {
-		font-size: 32px;
-		padding: 0px $global-spacing--tiny;
+		font-size: 28px;
+		padding: 0px $global-spacing--tiny/2;
+		margin-bottom: $global-spacing--tiny;
 	}
 
 	input {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: $global-spacing--tiny;
+		padding: $global-spacing--tiny/2;
+		font-size: 14px;
+		width: 100%;
+		max-width: 200px;
 	}
 
 
@@ -384,13 +419,31 @@ hr {
 	}
 }
 
-.generic-btn {
+.e-button {
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.9px;
 	background-color: transparent;
-	padding: 12px $global-spacing--small;
-	border: 4px solid $font-color;
+	padding: 10px 20px;
+	border: 3px solid $font-color;
 	color: $font-color;
-	&.inverted {
-		border: 4px solid #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    outline: none;
+
+	&:hover {
+		background-color: $font-color;
 		color: #ffffff;
+	}
+
+	&.inverted {
+		border: 3px solid #ffffff;
+		color: #ffffff;
+
+		&:hover {
+			background-color: #ffffff;
+			color: $font-color;
+		}
 	}
 }
