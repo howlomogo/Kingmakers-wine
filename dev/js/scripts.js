@@ -54,7 +54,8 @@ function toggleNavigation() {
 //- Events
 function changeEvent(event) {
     $(".events-showcase--container").removeClass("is-active");
-    $("#" + event).addClass("is-active");
+    $(".events-box--pointer").removeClass("is-active");
 
-    console.log("bufewqfe");
+    $("#" + event).addClass("is-active");
+    $("#" + event + "--pointer").addClass("is-active");
 }

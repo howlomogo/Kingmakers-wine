@@ -120,6 +120,8 @@ hr {
 
 //- Events Section
 .events--section {
+
+	margin-bottom: $global-spacing--large;
     @include mq($until: tablet) {
     	display: none;
     }
@@ -127,17 +129,22 @@ hr {
 
 .event-box--container {
 	width: 100%;
-	height:260px;
-	background-color: red;
+	height:190px;
 	position: relative;
 	background-size: cover;
 }
 
-.events-box--bottom {
+.events-overlay {
 	position: absolute;
+	top:0;
 	left:0;
 	right:0;
-	bottom: 0;
+	bottom:0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.events-box--bottom {
+	position: relative;
 	background-color: $color-grey-lightest;
 	padding: $global-spacing--normal $global-spacing--tiny $global-spacing--tiny;
 	text-align: center;
@@ -149,6 +156,41 @@ hr {
 	.ion {
 		padding-right: $global-spacing--tiny / 2;
 	}
+}
+
+.events-box--text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: $global-spacing--normal;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+
+    h5 {
+    	margin-bottom: 0px;
+    	letter-spacing: 2px;
+    }
+}
+
+.events-box--pointer {
+	transition: all 0.5s;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 20px solid $color-grey-lightest;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+
+    &.is-active {
+    	opacity: 1;
+    }
 }
 
 .events-box--button {
@@ -181,6 +223,16 @@ hr {
 	}
 
 //- Showcase Section
+
+.events-showcase--container {
+	overflow: hidden;
+	display: none;
+
+	&.is-active {
+		display: block;
+	}
+}
+
 .showcase-text--container {
 	padding: $global-spacing--huge 0px;
 	width:100%;
