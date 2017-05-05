@@ -204,23 +204,23 @@ hr {
 }
 //- Events Section
 
-	.calender-container {
-		display: inline-block;
-	    margin-bottom: 16px;
-		.ion {
-			padding-right: $global-spacing--tiny / 2;
-		    display: inline-block;
-		    font-size: 22px;
-		    vertical-align: middle;
-		}
-
-		span {
-		    display: inline-block;
-		    vertical-align: middle;
-		    font-size: 14px;
-		    font-weight: 400;
-		}
+.calender-container {
+	display: inline-block;
+    margin-bottom: 16px;
+	.ion {
+		padding-right: $global-spacing--tiny / 2;
+	    display: inline-block;
+	    font-size: 22px;
+	    vertical-align: middle;
 	}
+
+	span {
+	    display: inline-block;
+	    vertical-align: middle;
+	    font-size: 14px;
+	    font-weight: 400;
+	}
+}
 
 //- Showcase Section
 
@@ -236,20 +236,33 @@ hr {
 .showcase-text--container {
 	padding: $global-spacing--huge 0px;
 	width:100%;
-	p {
-		font-size:14px;
-		margin-bottom: $global-spacing--normal;
-		font-weight: 300;
-	}
 
 	h2 {
 		letter-spacing: 1px;
 		margin-bottom: $global-spacing--tiny /2;
+		animation-delay: 0.3s;
 	}
 
 	hr {
 		margin-bottom: $global-spacing--tiny;
 		border-top: 1px solid $font-color;
+		animation-delay: 0.3s;
+		max-width: 90px;
+	}
+
+	.calender-container {
+		animation-delay: 0.6s
+	}
+
+	p {
+		font-size:14px;
+		margin-bottom: $global-spacing--normal;
+		font-weight: 300;
+		animation-delay: 0.9s;
+	}
+
+	button {
+		animation-delay: 1.2s;
 	}
 
     @include mq($until: tablet) {
@@ -376,9 +389,9 @@ hr {
 	padding-bottom: $global-spacing--huge;
 
 	img {
-			margin-bottom: $global-spacing--small;
-			max-width: 380px;
-			width: 100%;
+		margin-bottom: $global-spacing--small;
+		max-width: 380px;
+		width: 100%;
 	}
 }
 
