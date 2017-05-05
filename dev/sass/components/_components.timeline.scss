@@ -5,7 +5,7 @@
 	width: 100%;
 
 	img {
-			margin: 0 auto;
+			margin: 0 auto -2px auto;
 			display: block;
 	}
 }
@@ -107,7 +107,11 @@
 }
 
 .timeline ul li.in-view::after {
-	background: #E53935;
+	background-image: url('/assets/wine-timeline-center.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: none !important;
+	background-size: 14px;
 }
 
 .timeline ul li div {
@@ -147,7 +151,7 @@
 
 	.timeline-wine--container {
 		img {
-				margin: 0 0 0 2px;
+			margin: 0 0 -2px 2px;
 		}
 	}
 

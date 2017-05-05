@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: normal !important;
 }
 
+p, span, button, a {
+	font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
 	font-size: 2.25rem;
 }
@@ -96,6 +100,7 @@ hr {
 	p {
 		font-size: 14px;
 		margin-bottom: $global-spacing--tiny;
+		font-weight: 300;
 	}
 
 	hr {
@@ -146,22 +151,34 @@ hr {
 	}
 }
 
-.events-box--info {
+.events-box--button {
 	position: absolute;
-	background-color: #ffffff;
 	padding: $global-spacing--tiny /2 $global-spacing--small;
 	top: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	border: none;
+	border: none !important;
 	outline: none;
-
-	p {
-		margin-bottom: 0px;
-	}
 }
 //- Events Section
 
+	.calender-container {
+		display: inline-block;
+	    margin-bottom: 16px;
+		.ion {
+			padding-right: $global-spacing--tiny / 2;
+		    display: inline-block;
+		    font-size: 22px;
+		    vertical-align: middle;
+		}
+
+		span {
+		    display: inline-block;
+		    vertical-align: middle;
+		    font-size: 14px;
+		    font-weight: 400;
+		}
+	}
 
 //- Showcase Section
 .showcase-text--container {
@@ -169,20 +186,18 @@ hr {
 	width:100%;
 	p {
 		font-size:14px;
+		margin-bottom: $global-spacing--normal;
+		font-weight: 300;
 	}
 
-	h3 {
-		margin-bottom: $global-spacing--tiny;
+	h2 {
+		letter-spacing: 1px;
+		margin-bottom: $global-spacing--tiny /2;
 	}
 
 	hr {
 		margin-bottom: $global-spacing--tiny;
 		border-top: 1px solid $font-color;
-	}
-
-	.ion {
-		padding-right: $global-spacing--tiny / 2;
-		margin-bottom: $global-spacing--tiny;
 	}
 
     @include mq($until: tablet) {
@@ -323,10 +338,12 @@ hr {
 }
 
 .banner-sub-title {
-	font-size: 20px;
+	font-size: 24px;
 	color: #ffffff;
 	font-style: italic;
 	margin-bottom: 0px;
+	font-weight: 400;
+	letter-spacing: 0.9px;
 }
 
 
@@ -433,8 +450,8 @@ hr {
     outline: none;
 
 	&:hover {
-		background-color: $font-color;
-		color: #ffffff;
+		background-color: $font-color !important;
+		color: #ffffff !important;
 	}
 
 	&.inverted {
@@ -445,5 +462,9 @@ hr {
 			background-color: #ffffff;
 			color: $font-color;
 		}
+	}
+
+	&.white {
+		background-color: #ffffff;
 	}
 }
