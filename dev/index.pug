@@ -4,7 +4,7 @@ html
 	body
 		include /_includes/_navigation
 
-		.video-container
+		.video-container.u-margin-bottom
 			video.fillWidth(autoplay loop)
 				source(src='/assets/On-the-vine.mp4', type='video/mp4')
 				| Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -15,11 +15,11 @@ html
 
 			.banner-content
 				.o-wrapper.o-wrapper--size-small
-					img.banner-logo(src="/assets/banner-logo.svg")
-					hr.banner-line
-					h2.banner-sub-title The flavours of nature fit for royalty
+					img.banner-logo.animated.fadeIn(src="/assets/banner-logo.svg")
+					hr.banner-line.animated.fadeIn
+					h2.banner-sub-title.animated.fadeIn(data-wow-offset="10" data-wow-delay="0.5s") The flavours of nature fit for royalty
 
-		.o-wrapper
+		.o-wrapper.wow.fadeInUp
 			.section-header
 				h1.section-header--title About
 				hr.section-header--line
@@ -65,7 +65,7 @@ html
 							p Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
 					
 
-		.o-wrapper
+		.o-wrapper.wow.fadeInUp
 			.section-header
 				h1.section-header--title Wines
 				hr.section-header--line
@@ -87,7 +87,7 @@ html
 				.o-layout.o-layout--middle.o-layout--stretch
 
 					.o-layout__item(class="u-1/1 u-2/3@tablet")
-						.wine-preview--text-container.isflipped
+						.wine-preview--text-container.isflipped.wow.fadeInLeft
 							.wine-preview--text
 								h2 LEESE-FITCH
 								hr
@@ -103,7 +103,7 @@ html
 
 					.o-layout__item.u-position--relative.u-background-color--white(class="u-1/3")
 						div
-							img.wine-preview--img(src="/assets/white-wine.png")
+							img.wine-preview--img.wow.fadeIn(src="/assets/white-wine.png")
 
 						svg(class="wine-triangle" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
 							g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
@@ -119,7 +119,7 @@ html
 				.o-layout.o-layout--middle.o-layout--stretch
 					.o-layout__item.u-position--relative.u-background-color--white(class="u-1/3")
 						div
-							img.wine-preview--img(src="/assets/red-wine.png")
+							img.wine-preview--img.wow.fadeIn(src="/assets/red-wine.png")
 
 						svg(class="wine-triangle isflipped" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
 							g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
@@ -127,7 +127,7 @@ html
 									polygon(id="Rectangle-9" points="255.494318 34 255.494318 729 62 729")
 
 					.o-layout__item(class="u-1/1 u-2/3@tablet")
-						.wine-preview--text-container
+						.wine-preview--text-container.wow.fadeInRight
 							.wine-preview--text
 								h2 LEESE-FITCH
 								hr
@@ -149,7 +149,7 @@ html
 				.o-layout.o-layout--stretch.o-layout--middle
 
 					.o-layout__item(class="u-1/1 u-2/3@tablet")
-						.wine-preview--text-container.isflipped
+						.wine-preview--text-container.isflipped.wow.fadeInLeft
 							.wine-preview--text
 								h2 LEESE-FITCH
 								hr
@@ -165,7 +165,7 @@ html
 
 					.o-layout__item.u-position--relative.u-background-color--white(class="u-1/3")
 						div
-							img.wine-preview--img(src="/assets/white-wine.png")
+							img.wine-preview--img.wow.fadeIn(src="/assets/white-wine.png")
 
 						svg(class="wine-triangle" width="120px" height="695px" preserveAspectRatio="none" viewBox="0 0 194 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
 							g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")

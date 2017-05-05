@@ -55,7 +55,7 @@ hr {
 
 .wine-preview--img {
 	position: absolute;
-	max-width: 70%;
+	max-width: 190px;
 	max-height: 70%;
 	top: 50%;
 	left: 50%;
@@ -373,9 +373,10 @@ hr {
 	width: 100%;
 	text-align: center;
 	padding: $global-spacing--normal;
+	padding-bottom: $global-spacing--huge;
 
 	img {
-			margin-bottom: $global-spacing--tiny;
+			margin-bottom: $global-spacing--small;
 			max-width: 380px;
 			width: 100%;
 	}
@@ -385,8 +386,10 @@ hr {
 
 .banner-line {
 	width: 80%;
-	margin: 0 auto $global-spacing--tiny/2 auto;
-	max-width: 380px;
+	margin: 0 auto $global-spacing--tiny auto;
+	max-width: 180px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .banner-sub-title {
@@ -396,6 +399,8 @@ hr {
 	margin-bottom: 0px;
 	font-weight: 400;
 	letter-spacing: 0.9px;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 
