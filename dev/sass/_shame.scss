@@ -76,7 +76,7 @@ hr {
     }
 
     @include mq($until: mobile) {
-    	padding: $global-spacing--huge $global-spacing--small !important;
+    	padding: $global-spacing--huge 0px !important;
     }
 }
 
@@ -231,6 +231,10 @@ hr {
 	&.is-active {
 		display: block;
 	}
+
+    @include mq($until: tablet) {
+    	display: block !important;
+    }
 }
 
 .showcase-text--container {
@@ -248,6 +252,10 @@ hr {
 		border-top: 1px solid $font-color;
 		animation-delay: 0.3s;
 		max-width: 90px;
+
+	    @include mq($until: tablet) {
+			margin: 0 auto $global-spacing--tiny auto;
+	    }
 	}
 
 	.calender-container {
