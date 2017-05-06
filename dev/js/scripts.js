@@ -18,12 +18,8 @@ function toggleNavigation() {
 (function() {
 
   'use strict';
-
-  // define variables
   var items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -55,9 +51,11 @@ function toggleNavigation() {
 function changeEvent(event) {
     $(".events-showcase--container").removeClass("is-active");
     $(".events-box--pointer").removeClass("is-active");
+    $(".events-box--button").removeClass("is-active");
 
     $("#" + event).addClass("is-active");
     $("#" + event + "--pointer").addClass("is-active");
+    $("#" + event + "--btn").addClass("is-active");
 }
 
 

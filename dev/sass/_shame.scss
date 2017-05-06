@@ -242,7 +242,6 @@ hr {
 
     @include mq($until: tablet) {
     	display: block !important;
-		margin-bottom: 0px;
     }
 }
 
@@ -556,5 +555,10 @@ hr {
 		padding: 12px 24px;
 		letter-spacing: 0.5px;
 		background-color: #ffffff;
+	}
+
+	&.is-active {
+		background-color: $font-color !important;
+		color: #ffffff !important;
 	}
 }
