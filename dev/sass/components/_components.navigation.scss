@@ -1,9 +1,11 @@
 .overlay {
     position: fixed;
-    width: 100%;
+    width: 300px;
+    right:-300;
     height: 100%;
-    z-index: 1;
-    background-color: #ffffff;
+    z-index: 999;
+    // background-color: rgba(0,0,0,0.9);
+    background-color: #000000;
     opacity: 0;
     overflow-x: hidden;
     transition: 0.5s;
@@ -11,38 +13,84 @@
 
     &.is-active {
         opacity: 1;
+        right:0;
         pointer-events: auto;
     }
 
+    img {
+        max-width: 240px;
+        margin-bottom: $global-spacing--tiny;
+    }
+
+    hr {
+        width: 90px;
+        margin: 0 auto $global-spacing--normal;
+
+    }
+
     a {
-        padding: 32px;
         text-decoration: none;
-        letter-spacing: 4px;
-        font-size: 36px;
-        color: $font-color;
+        letter-spacing: 7px;
+        font-size: 18px;
+        color: #BDBDBD;
         font-family: 'PT Serif', serif;
         transition: 0.3s;
-        display: inline-block;
-
-        @include mq($until: tablet) {
-            font-size: 20px;
-            display: block;
-        }
+        display: block;
+        margin-bottom: $global-spacing--tiny;
+        font-weight: 300;
 
         &:hover {
-            color: #f1f1f1;
+            color: #ffffff;
         }
+    }
+
+
+    @include mq($until: tablet) {
+        width: 100%;
     }
 }
 
 .overlay-content {
     position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
     width: 100%;
     text-align: center;
     font-weight: 600;
+    padding-top: 96px;
+    z-index: 1;
 }
+
+.overlay-fullscreen {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:300px;
+    // background-color: red;
+    z-index: 0;
+
+
+    @include mq($until: tablet) {
+        display: none;
+    }
+}
+
+// .overlay-contact {
+//     position: absolute;
+//     text-align: center;
+//     bottom: 0;
+//     width: 100%;
+//     padding: $global-spacing--normal;
+//     // color: #ffffff;
+
+//     h5 {
+//         margin-bottom: $global-spacing--tiny;
+//     }
+
+//     p {
+//         font-family: 'PT Serif', serif;
+//         font-size: 14px;
+//     }
+// }
 
 .nav--burger {
     color: #ffffff;
