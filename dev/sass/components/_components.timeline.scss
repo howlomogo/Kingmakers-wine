@@ -1,6 +1,28 @@
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.timeline-test {
+    overflow: hidden;
+    background-image: url("/assets/white-wine-bg2.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: $global-spacing--huge 0px;
+    position: relative;
+}
+
+.overlay--white {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color: rgba(255,255,255,0.9);
+}
+
+
 .timeline-wine--container {
 	width: 100%;
 
@@ -12,6 +34,8 @@
 
 
 .timeline {
+    -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%) !important;
 	h3 {
 		margin-bottom: $global-spacing--tiny/2 !important;
 	}
